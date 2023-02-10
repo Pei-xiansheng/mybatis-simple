@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learning.mapper.AUserMapper">
+    <select id="selectOne" resultType="com.learning.entity.AUser">
+        select id,username,email,phone from user where id = ?
+    </select>
+
+    <select id="selectAll" resultType="com.learning.entity.AUser">
+        select id,username,email,phone from user
+    </select>
+</mapper>
